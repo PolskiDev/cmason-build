@@ -1,0 +1,33 @@
+# mason-save -t all
+
+# See ../targets.txt   for more CPU architectures
+# and supported OS information
+
+
+LINUX_all: "echo 'main target for linux'"
+LINUX_build: "echo 'build target for linux'"
+LINUX_clean: "echo 'cleaning target for linux'"
+
+WIN_all: "echo 'main target for windows'"
+WIN_build: "echo 'build target for windows'"
+WIN_clean: "echo 'cleaning target for windows'"
+
+MAC_all: "echo 'main target for macos x'"
+MAC_build: "echo 'build target for macos x'"
+MAC_clean: "echo 'cleaning target for macos x'"
+
+FREEBSD_all: "echo 'main target for freebsd'"
+FREEBSD_build: "echo 'build target for freebsd'"
+FREEBSD_clean: "echo 'cleaning target for freebsd'"
+
+OPENBSD_all: "echo 'main target for openbsd'"
+OPENBSD_build: "echo 'build target for openbsd'"
+OPENBSD_clean: "echo 'cleaning target for openbsd'"
+
+SUNOS_all: "echo 'main target for solaris'"
+SUNOS_build: "echo 'build target for solaris'"
+SUNOS_clean: "echo 'cleaning target for solaris'"
+
+UNIVERSAL_all: "echo 'main target for any other system'"
+UNIVERSAL_build: "echo 'build target for any other system'"
+UNIVERSAL_clean: "echo 'cleaning target for any other system'"

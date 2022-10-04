@@ -1,0 +1,9 @@
+# mason-dev -t all
+
+# See ../targets.txt   for more CPU architectures
+# and supported OS information
+
+
+all: "echo 'main target'"
+build: "echo 'build target'"
+clean: "echo 'cleaning'"

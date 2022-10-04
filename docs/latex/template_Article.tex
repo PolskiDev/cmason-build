@@ -1,0 +1,236 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+	\includegraphics[scale=0.5]{cmason3.png}
+\end{center}
+
+\section{How to build CMason from sources?}
+First, download CMason sources from cmason.gabrielmargarido.org.
+
+Install Node.js and NPM (via: apt, dnf, yum, pacman)
+
+or download from www.nodejs.org. 
+
+Install Node dependencies as --save-dev: typescript, @types/node, pkg
+\begin{verbatim}
+	[GNU Make]
+	cd cmason-build/src && make
+	
+	[Shell Script]
+	cd cmason-build/src
+	sudo chmod +x make.sh
+	./make.sh
+	
+	[Windows - Batch]
+	cd cmason-build\src
+	start make.bat
+	
+	
+\end{verbatim}
+\newpage
+
+\section{Run CMason - Masonfile}
+\begin{verbatim}
+	
+SYNTAX:
+mason-common -t <target>
+mason-save -t <target>
+mason-dev -t <target>
+
+mason-common -t
+mason-save -t
+mason-dev -t
+
+mason-common --version
+mason-save --version
+mason-dev --version
+
+
+
+EXAMPLE:
+mason-common -t build
+mason-save -t build
+mason-dev -t build
+
+mason-common -t
+mason-save -t
+mason-dev -t
+
+mason-common --version
+mason-save --version
+mason-dev --version
+
+\end{verbatim}
+\newpage
+
+\section{CMason Common Architectures}
+
+\begin{verbatim}
+	WIN32
+	WIN64
+	WIN*ARM32
+	WIN*ARM64
+	
+	MAC32
+	MAC64
+	MAC*ARM64
+	
+	LINUX32
+	LINUX64
+	LINUX*ARM32
+	LINUX*ARM64
+	LINUX*PPC32
+	LINUX*PPC64
+	LINUX*S390
+	LINUX*S390X
+	LINUX*MIPS
+	LINUX*MIPSEL
+
+	FREEBSD32
+	FREEBSD64
+	FREEBSD*ARM32
+	FREEBSD*ARM64
+	FREEBSD*PPC32
+	FREEBSD*PPC64
+	FREEBSD*S390
+	FREEBSD*S390X
+	FREEBSD*MIPS
+	FREEBSD*MIPSEL
+	
+	OPENBSD32
+	OPENBSD64
+	OPENBSD*ARM32
+	OPENBSD*ARM64
+	OPENBSD*PPC32
+	OPENBSD*PPC64
+	OPENBSD*S390
+	OPENBSD*S390X
+	OPENBSD*MIPS
+	OPENBSD*MIPSEL
+\end{verbatim}
+\newpage
+
+\begin{verbatim}
+	SUNOS32
+	SUNOS64
+	SUNOS*ARM32
+	SUNOS*ARM64
+	SUNOS*PPC32
+	SUNOS*PPC64
+	SUNOS*S390
+	SUNOS*S390X
+	SUNOS*MIPS
+	SUNOS*MIPSEL
+	
+	UNIVERSAL    
+\end{verbatim}
+\newpage
+
+\section{CMason Common}
+CMason Common binary inspects Masonfile archives looking for targets based on: Current running Operating System and CPU Architecture
+
+\begin{verbatim}
+	# Microsoft Windows (all)
+	WIN32_all: "echo 'main target for windows'"
+	WIN64_all: "echo 'main target for windows (64-bit)'"
+	WIN*ARM64_all: "echo 'main target for windows (ARM 64-bit)'"
+	
+	
+	# Apple MacOS X (all)
+	MAC32_all: "echo 'main target for macos x (old models)'"
+	MAC64_all: "echo 'main target for macos x (64-bit)'"
+	MAC*ARM64_all: "echo 'main target for macos x (Apple Silicon)'"
+	
+	
+	
+	# Microsoft Windows (guess)
+	WIN32_guess: "echo 'guess target for windows'"
+	WIN64_guess: "echo 'guess target for windows (64-bit)'"
+	WIN*ARM64_guess: "echo 'guess target for windows (ARM 64-bit)'"
+
+	# Apple MacOS X (guess)
+	MAC32_guess: "echo 'guess target for macos x (old models)'"
+	MAC64_guess: "echo 'guess target for macos x (64-bit)'"
+	MAC*ARM64_guess: "echo 'guess target for macos x (Apple Silicon)'"
+	
+	# Microsoft Windows (build)
+	WIN32_build: "echo 'build target for windows'"
+	WIN64_build: "echo 'build target for windows (64-bit)'"
+	WIN*ARM64_build: "echo 'build target for windows (ARM 64-bit)'"
+	
+	
+	# Apple MacOS X (build)
+	MAC32_build: "echo 'build target for macos x (old models)'"
+	MAC64_build: "echo 'build target for macos x (64-bit)'"
+	MAC*ARM64_build: "echo 'guess target for macos x (Apple Silicon)'"
+	
+\end{verbatim}
+\newpage
+
+\section{CMason Save Operating System List}
+\begin{verbatim}
+	WIN    MAC    LINUX   FREEBSD   OPENBSD    SUNOS    UNIVERSAL
+\end{verbatim}
+
+
+\section{CMason Save}
+CMason Dev binary inspects Masonfile archives looking for targets based on: Current running Operating System
+
+\begin{verbatim}
+	# Microsoft Windows 
+	WIN_all: "echo 'main target for windows'"
+	
+	# Apple MacOS X
+	MAC_all: "echo 'main target for macos x'"
+	
+\end{verbatim}
+
+\section{CMason Dev}
+CMason Dev binary inspects Masonfile archives looking for targets based on its name.
+
+\begin{verbatim}
+	# Any Operating System
+	all: "echo 'main target'"
+	build: "echo 'build target'"
+	guess: "echo 'guess target'"
+	
+	
+\end{verbatim}
+
+
+\textbf{This documentation is dedicated to:}
+
+
+
+\emph{Phd. Professor Luis Filipe Miranda de Souza Ribeiro - \textbf{In memoriam}}
+
+\emph{Phd. Professor Elizabete Velloso de Margarido Ribeiro}
+
+\emph{Severina Silva Velloso de Margarido}
+
+\emph{Ana Cristina Baptista Miranda de Souza Ribeiro}
+
+
+\emph{João Paraízo - C.E.G.}
+
+\emph{Toseli Matos Paraízo (Fortran Developer and Mechanic Engineer Student) - C.E.G.}
+
+\emph{Isaías Francisco Ferreira da Silva - M.'. M.'.}
+
+
+\emph{Centro C.E.G. - São Gonçalo, RJ}
+
+
+\emph{Capítulo Perfeita União Nº 115 - Ordem DeMolay}
+
+
+\end{document}

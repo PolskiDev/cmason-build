@@ -1,0 +1,73 @@
+# mason-common -t all
+
+# See ../targets.txt   for more CPU architectures
+# and supported OS information
+
+
+# You can write new targets using the pattern
+# LINUX*ARCH_target
+# FREEBSD*ARCH_target
+# OPENBSD*ARCH_target
+# UNIVERSAL_target   works as "else" for all other targets
+
+
+
+# GNU/Linux
+LINUX32_all: "echo 'main target for linux'"
+LINUX64_all: "echo 'main target for linux (64-bit)'"
+
+LINUX*ARM32_all: "echo 'main target for linux (ARM 32-bit)'"
+LINUX*ARM64_all: "echo 'main target for linux (ARM 64-bit)'"
+
+LINUX*PPC32_all: "echo 'main target for linux (PowerPC 32-bit)'"
+LINUX*PPC64_all: "echo 'main target for linux (PowerPC 64-bit)'"
+
+
+# FreeBSD
+FREEBSD32_all: "echo 'main target for freebsd'"
+FREEBSD64_all: "echo 'main target for freebsd (64-bit)'"
+
+FREEBSD*ARM32_all: "echo 'main target for freebsd (ARM 32-bit)'"
+FREEBSD*ARM64_all: "echo 'main target for freebsd (ARM 64-bit)'"
+
+FREEBSD*PPC32_all: "echo 'main target for freebsd (PowerPC 32-bit)'"
+FREEBSD*PPC64_all: "echo 'main target for freebsd (PowerPC 64-bit)'"
+
+
+# Microsoft Windows
+WIN32_all: "echo 'main target for windows'"
+WIN64_all: "echo 'main target for windows (64-bit)'"
+WIN*ARM64_all: "echo 'main target for windows (ARM 64-bit)'"
+
+
+# Apple MacOS X
+MAC32_all: "echo 'main target for macos x (old models)'"
+MAC64_all: "echo 'main target for macos x (64-bit)'"
+MAC*ARM64_all: "echo 'main target for macos x (Apple Silicon)'"
+
+
+
+# OpenBSD
+OPENBSD32_all: "echo 'main target for openbsd'"
+OPENBSD64_all: "echo 'main target for openbsd (64-bit)'"
+
+OPENBSD*ARM32_all: "echo 'main target for openbsd (ARM 32-bit)'"
+OPENBSD*ARM64_all: "echo 'main target for openbsd (ARM 64-bit)'"
+
+OPENBSD*PPC32_all: "echo 'main target for openbsd (PowerPC 32-bit)'"
+OPENBSD*PPC64_all: "echo 'main target for openbsd (PowerPC 64-bit)'"
+
+
+# Solaris / SunOS
+SUNOS32_all: "echo 'main target for solaris'"
+SUNOS64_all: "echo 'main target for solaris (64-bit)'"
+
+SUNOS*ARM32_all: "echo 'main target for solaris (ARM 32-bit)'"
+SUNOS*ARM64_all: "echo 'main target for solaris (ARM 64-bit)'"
+
+SUNOS*PPC32_all: "echo 'main target for solaris (PowerPC 32-bit)'"
+SUNOS*PPC64_all: "echo 'main target for solaris (PowerPC 64-bit)'"
+
+
+# Any other operating system
+UNIVERSAL_all: "echo 'main target for any other system'"
