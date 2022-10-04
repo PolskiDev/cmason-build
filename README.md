@@ -16,7 +16,7 @@ each target points to one string with the shell commands connect by &&.
 #### Should you use CMason?
 If you are looking for portability and Microsoft Windows support, you can use CMason instead of GNU Make or instead of writing build scripts using Batch files.
 
-See the manual for more information for your project, platform support, and details about the language semantics.
+See the manual (inside "docs/CMason-v1.x.pdf") for more information for your project, platform support, and details about the language semantics.
 
 
 #### ~ Building from sources ~
