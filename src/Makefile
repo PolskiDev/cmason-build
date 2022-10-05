@@ -1,6 +1,6 @@
-MASON_COMMON=mason-common
-MASON_DEV=mason-dev
-MASON_SAVE=mason-save
+MASON_COMMON=cmason-common
+MASON_DEV=cmason-dev
+MASON_SAVE=cmason-save
 all:
 	npm install --save-dev
 	npx tsc $(MASON_COMMON).ts

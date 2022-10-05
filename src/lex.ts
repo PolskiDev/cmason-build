@@ -1,7 +1,7 @@
 // TARGET CONFIGURATIONS: flag, default target, Makefile name
 export const default_target = "all"
 export const run = "-t"
-export const ninjafile = "Masonfile"
+export const ninjafile = "CMasonfile"
 
 export const run_common = "-t"
 export const run_save = "-s"
@@ -84,9 +84,9 @@ export const separator = ":"
 
 
 // Show name at manpage
-export const ninjadev_name = "mason-dev"
-export const ninjasave_name = "mason-save"
-export const ninja_name = "mason-common"
+export const ninjadev_name = "cmason-dev"
+export const ninjasave_name = "cmason-save"
+export const ninja_name = "cmason-common"
 
 
 export const ninjaDev = "CMasonDev"

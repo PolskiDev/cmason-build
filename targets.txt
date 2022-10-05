@@ -1,6 +1,6 @@
-MASONFILE CONFIGURATION
+CMASONFILE CONFIGURATION
 
-File name: Masonfile
+File name: CMasonfile
 archs:  intel 32-bit, intel 64-bit, arm 32-bit, arm 64-bit,
         powerpc 32-bit, powerpc 64-bit, s390, s390x, mips,
         mipsel, undefined

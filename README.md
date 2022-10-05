@@ -22,7 +22,7 @@ See the manual (inside "docs/CMason-v1.x.pdf") for more information for your pro
 #### ~ Building from sources ~
 Unzip the downloaded file:
 
-```tar -xfv cmason-build.tar.xz && cd cmason-build```  
+```tar -xfv cmason-build.tar.gz && cd cmason-build```  
 
 - GNU/Linux  
   ```$ cd src && sudo chmod +x make.sh```  

@@ -1,4 +1,4 @@
-# mason-save -t all
+# cmason-save -t all
 
 # See ../targets.txt   for more CPU architectures
 # and supported OS information
