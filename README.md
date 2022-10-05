@@ -37,7 +37,7 @@ Unzip the downloaded file:
   
   
     
-#### ~ Install with releaf mode - FreeBSD, OpenBSD, NetBSD and other UNIXes ~ 
+#### ~ Install with releaf mode - FreeBSD, OpenBSD, NetBSD and other UNIXes (It requires BASH to run) ~ 
 __Shell Script mode__  
 - Install  
 ```$ sudo chmod +x make-releaf.sh```  
