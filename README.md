@@ -34,3 +34,24 @@ Unzip the downloaded file:
 - Windows (Batch file)  
   ```$ cd src```  
   ```$ start make.bat```  
+  
+  
+    
+#### ~ Install with releaf mode - FreeBSD, OpenBSD, NetBSD and other UNIXes ~ 
+__Shell Script mode__  
+- Install  
+```$ sudo chmod +x make-releaf.sh```  
+```$ sudo ./make-releaf.sh```  
+
+- Uninstall  
+```$ sudo chmod +x make-unreleaf.sh```  
+```$ sudo ./make-unreleaf.sh```   
+
+
+__Makefile mode__  
+- Install  
+```$ sudo make releaf```  
+
+- Uninstall  
+```$ sudo make unreleaf```   
+
