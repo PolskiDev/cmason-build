@@ -31,6 +31,6 @@ Unzip the downloaded file:
 - GNU Make (FreeBSD, OpenBSD, Hurd, Linux, MacOS)  
   ```$ cd src && make```  
   
-- Windows (Batch file)
+- Windows (Batch file)  
   ```$ cd src```  
   ```$ start make.bat```  
